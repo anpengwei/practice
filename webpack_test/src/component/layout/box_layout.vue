@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <h1>hello world</h1>
+  <div class="box_layout">
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "",
+  name: "boxLayout",
   components: {},
   data() {
     return {};
