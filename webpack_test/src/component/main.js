@@ -1,8 +1,9 @@
 import Vue from "vue";
+import boxLayout from "./layout/box_layout.vue";
 const components = [
   {
     name: "boxLayout",
-    component: () => import("./layout/box_layout.vue"),
+    component: boxLayout,
   },
 ];
 const VueComponents = () => {
