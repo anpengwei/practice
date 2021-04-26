@@ -5,7 +5,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin-webpack4");
 module.exports = {
   entry: "./src/main.js",
   output: {
-    path: path.resolve(__dirname, "./dist/"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "[name].js",
   },
   plugins: [
@@ -38,7 +38,11 @@ module.exports = {
       },
       {
         test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-        loader: "url-loader?limit=1024",
+        loader: "url-loader",
+        options: {
+          limit: 1024,
+          fallback: "file-loader",
+        },
       },
       {
         test: /\.(html|tpl)$/,

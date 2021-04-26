@@ -1,5 +1,6 @@
 import home from "./home";
 import carouse from "./carousel";
+import drag from "./drag";
 export default [
   {
     path: "/",
@@ -7,4 +8,5 @@ export default [
   },
   home,
   carouse,
+  drag,
 ];

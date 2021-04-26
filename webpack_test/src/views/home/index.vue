@@ -22,7 +22,8 @@
           <section class="title_text">动态图形</section>
         </div>
       </div>
-      <Button @click="$router.push('/carouse')">轮播图</Button>
+      <Button @click="$router.push('/carouse')">虚拟滚动</Button>
+      <Button @click="$router.push('/drag')">拖拽</Button>
     </div>
   </boxLayout>
 </template>
